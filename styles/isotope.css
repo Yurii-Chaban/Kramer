@@ -1,0 +1,74 @@
+/* ---- filters-button ---- */
+.filters-button {
+  display: inline-block;
+  padding: 10px 18px;
+  background: none;
+  border: none;
+  border-radius: 30px;
+  text-transform: capitalize;
+  font: 400 30px 'Droid Sans', sans-serif;
+  color: #2c3e50;
+  cursor: pointer;
+}
+.filters-button:hover {
+  background-color: #2ecc71;
+  text-shadow: 0 -1px hsla(0, 0%, 0%, 0.8);
+  color: #fff;
+}
+.filters-button:active,
+.filters-button.is-checked {
+  background-color: #2ecc71;
+}
+.filters-button.is-checked {
+  color: white;
+  text-shadow: 0 -1px hsla(0, 0%, 0%, 0.8);
+}
+/* ---- button-group ---- */
+
+.button-group:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.button-group a:hover {
+  text-decoration: none;
+}
+.button-group li {
+  display: inline-block;
+  margin: 0 10px;
+}
+.button-group {
+  margin: 70px 0;
+  border-radius: 10px;
+  display: block;
+}
+.button-group .filters-button {
+  margin-left: 0;
+  margin-right: 30px;
+}
+.button-group .button:first-child { border-radius: 30px; }
+.button-group .button:last-child { border-radius: 30px; margin-right: 0; }
+
+/* ---- isotope ---- */
+
+.grid {
+  position: relative;
+  display: block;
+  margin: 0 55px;
+  text-align: center;
+}
+/* clear fix */
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.element-item {
+  position: relative;
+  float: left;
+  width: 33%;
+}
+.element-item > * {
+  margin: 0;
+  padding: 0;
+}
